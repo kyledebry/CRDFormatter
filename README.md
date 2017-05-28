@@ -3,7 +3,7 @@ CRDFormatter is a script for formatting EQUIP files into human-readable formats 
 
 ---
 
-# Contents
+## Contents
 - [Download CRDFormatter](#download)
 - [Instructions](#instructions)
     - [Description of EQUIP Files](#i_desc)
