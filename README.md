@@ -20,7 +20,7 @@ CRDFormatter is a script for formatting EQUIP files into human-readable formats 
 ---
 
 ## <a name="download"></a>Download CRDFormatter
-   [CRDFormatter](https://github.com/kyledebry/CRDFormatter/blob/master/CRDFormatter.jar?raw=true)
+   [`CRDFormatter.jar`](https://github.com/kyledebry/CRDFormatter/blob/master/CRDFormatter.jar?raw=true)
 
 ---
 
