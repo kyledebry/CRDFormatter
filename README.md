@@ -106,7 +106,9 @@ The second dataset, in columns E, F, and G, bins the data into 1 minute long bin
 - the number of minutes between the beginning of the run and the start of bin
 - the number of events in that bin
 
-Also shown in the image above are two graphs which show how easy it is to gain a sense of the data, and any changes that occurred during the run. The top graph is a plot of the minute-long binning of the data, while the lower graph contains a scatterplot of the second-long binning of the data, as well as a 60s moving average, which resembles the shape of the first graph.
+Shown in the image below are two graphs which show how easy it is to gain a sense of the data, and any changes that occurred during the run. The top graph is a plot of the minute-long binning of the data, while the lower graph contains a scatterplot of the second-long binning of the data, as well as a 60s moving average, which resembles the shape of the first graph.
+
+![Simplified file charts][simplified-charts]
 
 Depending on the length of the run and the rate at which events occurred, either the second or the minute graphs may be more useful. If another binning is required, the full event dataset can be used in programs like Excel to generate different histograms or analyses with a bit of extra work.
 
@@ -147,5 +149,6 @@ I'd prefer for you not to try to decompile the bytecode and muck around with it,
 
 [file-select]: https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/Select%20File.PNG "CRDFormatter file selection dialog"
 [full-events]: https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/Full%20Events.PNG "Full events file"
-[simplified]: https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/Simplified%20Charts.PNG "Simplified file"
+[simplified]: https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/Simplified.PNG "Simplified file"
+[simplified-charts]: https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/Simplified%20Charts.PNG "Simplified file charts"
 [error-file]: https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/Error_FileNotFound.PNG "Error: FileNotFoundException"
