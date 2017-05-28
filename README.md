@@ -119,6 +119,9 @@ I'll get back to you as soon as I can.
 
 ## <a name="contact"></a>Contact Me
 Email: [debry.1@osu.edu](mailto:debry.1@osu.edu)
+
+---
+
 ## <a name="copyright"></a>Copyright Stuff
 
 ---
