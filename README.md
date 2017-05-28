@@ -1,18 +1,35 @@
 # CRDFormatter
 CRDFormatter is a script for formatting EQUIP files into human-readable formats created by Kyle DeBry.
 
-## Contact me
+---
+
+# Contents
+- [Contact Me](#contact)
+- [Download CRDFormatter](#download)
+- [Instructions](#instructions)
+ - [Description of EQUIP Files](#i_desc)
+ - [Using the Program](#i_using)
+ - [Full Events file](#i_full)
+ - [Simplified file](#i_simplified)
+ - [Common Errors](#i_errors)
+  - [FileNotFoundException](#i_e_file)
+  - [Other errors](#i_e_other)
+- [Copyright Stuff](#copyright)
+
+---
+
+## <a name="contact"></a>Contact Me
 Email: [debry.1@osu.edu](mailto:debry.1@osu.edu)
 
 ---
 
-## Download CRDFormatter
+## <a name="download"></a>Download CRDFormatter
    [CRDFormatter](https://github.com/kyledebry/CRDFormatter/blob/master/CRDFormatter.jar?raw=true)
 
 ---
 
-## Instructions
-### Description of EQUIP Files
+## <a name="instructions"></a>Instructions
+### <a name="i_desc"></a>Description of EQUIP files
 CRDFormatter is a little program written by me to allow data from QuarkNet cosmic ray detectors, output by EQUIP, to be used by humans and analyzed however you want, with whatever tools you want.
 
 The data output from EQUIP looks like this:
@@ -35,7 +52,7 @@ The most important columns here are:
 
 However, this is difficult to read, and almost impossible to analyze in its current form. That's where CRDFormatter comes in.
 
-### Using the program:
+### <a name="i_using"></a>Using the program:
 The program is very simple to use, and there is no user input required other than choosing the correct EQUIP file.
 
 1. Download [CRDFormatter.jar](https://github.com/kyledebry/CRDFormatter/blob/master/CRDFormatter.jar?raw=true) and double-click to run the program.
@@ -46,7 +63,7 @@ The program is very simple to use, and there is no user input required other tha
 
 That's it! Now, navigate through your file system to the location of the EQUIP file on your computer. In the same folder, you should now find two `.csv` files with the same name as the EQUIP file, but the file name of one will end with `_FULL_EVENTS.csv` and the other with `_SIMPLIFIED.csv`.
 
-### Full Events file:
+### <a name="i_full"></a>Full Events file:
 The `_FULL_EVENTS.csv` file has the least amount of processing done on the data. It simply reports the most important information in human-readable format. Here is an example, from the same sample file as the snippet above:
 
 ![Full Events file][full-events]
@@ -63,7 +80,7 @@ On row 5, the data begin. The formatted version of the file contains:
 
 These data can then be analyzed in any program. `CSV ` files can be opened in any spreadsheet program, such as Microsoft Excel or Google Sheets.
 
-### Simplified file:
+### <a name="i_simplified"></a>Simplified file:
 The `_SIMPLIFIED.csv` file does not contain each event separately, but rather generates two histograms from the data. The first has a row for each second of the run, and the number of events that occurred during that second, while the second has a row with how many events were recorded in each minute of the run.
 
 These two data sets can easily be plotted to very quickly gain a sense of the nature of the run, and are also often used in further analyses. The generation of these two lists is a result of the difficulty of creating histograms in programs such as Excel, which has no native histogram functionality.
@@ -88,14 +105,14 @@ Also shown in the image above are two graphs which show how easy it is to gain a
 
 Depending on the length of the run and the rate at which events occurred, either the second or the minute graphs may be more useful. If another binning is required, the full event dataset can be used in programs like Excel to generate different histograms or analyses with a bit of extra work.
 
-### Common Errors:
-#### FileNotFoundException
+### <a name="i_errors"></a>Common Errors:
+#### <a name="i_e_file"></a>FileNotFoundException
 
-[Error: FileNotFoundException][error-file]
+![Error: FileNotFoundException][error-file]
 
 This error results from the CRDFormatter program trying to write to a file that is currently opened. For example, if you have previously formatted a file called `EQUIP_X.txt` and then opened the resulting `EQUIP_X_Simplified.csv` file in Excel, trying to format another file of the same name (`EQUIP_X.txt`) will result in this error. To successfully format the file, first close the `EQUIP_X_Simplified.csv` window of the program it is opened in (or possibly `Save As` another filename first) and run CRDFormatter again.
 
-#### Other errors
+#### <a name="i_e_other"></a>Other errors
 If you experience any other errors (either an error upon running the program, or an incorrectly formatted file), [email me](mailto:debry.1@osu.edu) with:
 - the file you were trying to format
 - a screenshot of the error message or the resulting incorrect file
@@ -103,14 +120,18 @@ If you experience any other errors (either an error upon running the program, or
 
 I'll get back to you as soon as I can.
 
-## Copyright Stuff
+## <a name="copyright"></a>Copyright Stuff
 You are free to distribute the CRDFormatter.jar program to anyone and use it for any reason. Giving credit would be nice. Specifically:
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">CRDFormatter</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://kyledebry.github.io/CRDFormatter/" property="cc:attributionName" rel="cc:attributionURL">Kyle DeBry</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">CRDFormatter</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/kyledebry" property="cc:attributionName" rel="cc:attributionURL">Kyle DeBry</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 I'd prefer for you not to try to decompile the bytecode and muck around with it, not because I'll hunt you down, but because it's kind of a mess. If you have questions about the program or want to make modifications, please [email me](mailto:debry.1@osu.edu).
 
+
+
 <center>This page &copy; 2017 Kyle DeBry.</center>
+
+
 
 [file-select]: https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/Select%20File.PNG "CRDFormatter file selection dialog"
 [full-events]: https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/Full%20Events.PNG "Full events file"
