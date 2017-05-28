@@ -136,7 +136,7 @@ I'd prefer for you not to try to decompile the bytecode and muck around with it,
 
 <center>This page &copy; 2017 Kyle DeBry.</center>
 
-
+---
 
 [file-select]: https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/Select%20File.PNG "CRDFormatter file selection dialog"
 [full-events]: https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/Full%20Events.PNG "Full events file"
