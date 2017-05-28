@@ -57,7 +57,7 @@ The most important columns here are:
 
 However, this is difficult to read, and almost impossible to analyze in its current form. That's where CRDFormatter comes in.
 
-### <a name="i_using"></a>Using the program:
+### <a name="i_using"></a>Using the program
 The program is very simple to use, and there is no user input required other than choosing the correct EQUIP file.
 
 1. Download [CRDFormatter.jar](https://github.com/kyledebry/CRDFormatter/blob/master/CRDFormatter.jar?raw=true) and double-click to run the program.
@@ -68,7 +68,7 @@ The program is very simple to use, and there is no user input required other tha
 
 That's it! Now, navigate through your file system to the location of the EQUIP file on your computer. In the same folder, you should now find two `.csv` files with the same name as the EQUIP file, but the file name of one will end with `_FULL_EVENTS.csv` and the other with `_SIMPLIFIED.csv`.
 
-### <a name="i_full"></a>Full Events file:
+### <a name="i_full"></a>Full Events file
 The `_FULL_EVENTS.csv` file has the least amount of processing done on the data. It simply reports the most important information in human-readable format. Here is an example, from the same [sample file](#i_demo) as the snippet above:
 
 ![Full Events file][full-events]
@@ -85,7 +85,7 @@ On row 5, the data begin. The formatted version of the file contains:
 
 These data can then be analyzed in any program. `CSV ` files can be opened in any spreadsheet program, such as Microsoft Excel or Google Sheets.
 
-### <a name="i_simplified"></a>Simplified file:
+### <a name="i_simplified"></a>Simplified file
 The `_SIMPLIFIED.csv` file does not contain each event separately, but rather generates two histograms from the data. The first has a row for each second of the run, and the number of events that occurred during that second, while the second has a row with how many events were recorded in each minute of the run.
 
 These two data sets can easily be plotted to very quickly gain a sense of the nature of the run, and are also often used in further analyses. The generation of these two lists is a result of the difficulty of creating histograms in programs such as Excel, which has no native histogram functionality.
@@ -112,7 +112,7 @@ Shown in the image below are two graphs which show how easy it is to gain a sens
 
 Depending on the length of the run and the rate at which events occurred, either the second or the minute graphs may be more useful. If another binning is required, the full event dataset can be used in programs like Excel to generate different histograms or analyses with a bit of extra work.
 
-### <a name="i_errors"></a>Common errors:
+### <a name="i_errors"></a>Common errors
 #### <a name="i_e_file"></a>FileNotFoundException
 
 ![Error: FileNotFoundException][error-file]
