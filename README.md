@@ -1,22 +1,23 @@
 # CRDFormatter
 CRDFormatter is a script for formatting EQUIP files into human-readable formats created by Kyle DeBry.
 
-## Contact me:
+## Contact me
 [debry.1@osu.edu](mailto:debry.1@osu.edu)
 
 ---
 
-## Download CRDFormatter:
+## Download CRDFormatter
    [CRDFormatter](https://github.com/kyledebry/CRDFormatter/blob/master/CRDFormatter.jar?raw=true)
 
 ---
 
-## Description
+## Manual
+### Description of EQIUP Files
 CRDFormatter is a little program written by me to allow data from QuarkNet cosmic ray detectors, output by EQUIP, to be used by humans and analyzed however you want, with whatever tools you want.
 
 The data output from EQUIP looks like this:
    ```
-*Col: 0      1  2  3  4  5  6  7  8  9        A          B      C D  E F*
+Col: 0      1  2  3  4  5  6  7  8  9        A          B      C D  E F
    C469D655 B4 00 37 00 00 00 37 00 C45DD4A4 123002.019 170915 A 11 0 +0069
    C469D655 00 00 00 00 39 00 00 00 C45DD4A4 123002.019 170915 A 11 0 +0069
    C469D656 00 00 00 00 00 00 00 2D C45DD4A4 123002.019 170915 A 11 0 +0069
@@ -31,5 +32,16 @@ The most important columns here are:
 - Column A, which is the time of day the event occurred, taken from GPS. In this example, all of the events occurred near 12:30pm (and 2.019 seconds).
 - Column B, which goves the date (DDMMYY). In this case, it is 17 Sept 2015.
 - Columns C, D, and E give error information (in this case everything is fine).
+
 However, this is difficult to read, and almost impossible to analyze in its current form. That's where CRDFormatter comes in.
+
 ### Using the program:
+The program is very simple to use, and there is no user input required other than choosing the correct EQUIP file.
+
+1. Download [CRDFormatter.jar](https://github.com/kyledebry/CRDFormatter/blob/master/CRDFormatter.jar?raw=true) and double-click to run the program.
+2. A dialog opens asking you to choose an EQUIP text file to format. Navigate to the location of the desired file on your system.
+3. Select the EQUIP file, and click `Format EQUIP File`.
+![CRDFormatter file selection dialog][file-select]
+
+
+[file-select]: https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/Select%20File.PNG "CRDFormatter file selection dialog"
