@@ -4,22 +4,17 @@ CRDFormatter is a script for formatting EQUIP files into human-readable formats 
 ---
 
 # Contents
-- [Contact Me](#contact)
 - [Download CRDFormatter](#download)
 - [Instructions](#instructions)
- - [Description of EQUIP Files](#i_desc)
- - [Using the Program](#i_using)
- - [Full Events file](#i_full)
- - [Simplified file](#i_simplified)
- - [Common Errors](#i_errors)
-  - [FileNotFoundException](#i_e_file)
-  - [Other errors](#i_e_other)
+    - [Description of EQUIP Files](#i_desc)
+    - [Using the Program](#i_using)
+    - [Full Events file](#i_full)
+    - [Simplified file](#i_simplified)
+    - [Common Errors](#i_errors)
+        - [FileNotFoundException](#i_e_file)
+        - [Other errors](#i_e_other)
+- [Contact Me](#contact)
 - [Copyright Stuff](#copyright)
-
----
-
-## <a name="contact"></a>Contact Me
-Email: [debry.1@osu.edu](mailto:debry.1@osu.edu)
 
 ---
 
@@ -120,7 +115,14 @@ If you experience any other errors (either an error upon running the program, or
 
 I'll get back to you as soon as I can.
 
+---
+
+## <a name="contact"></a>Contact Me
+Email: [debry.1@osu.edu](mailto:debry.1@osu.edu)
 ## <a name="copyright"></a>Copyright Stuff
+
+---
+
 You are free to distribute the CRDFormatter.jar program to anyone and use it for any reason. Giving credit would be nice. Specifically:
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">CRDFormatter</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/kyledebry" property="cc:attributionName" rel="cc:attributionURL">Kyle DeBry</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
