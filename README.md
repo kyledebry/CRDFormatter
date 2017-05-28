@@ -4,3 +4,7 @@ Script for formatting EQUIP files into human-readable formats created by Kyle De
 ## Contact me:
 [debry.1@osu.edu](mailto:debry.1@osu.edu)
 
+---
+
+## Download CRDFormatter:
+   [CRDExporter]()
