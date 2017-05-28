@@ -7,4 +7,4 @@ Script for formatting EQUIP files into human-readable formats created by Kyle De
 ---
 
 ## Download CRDFormatter:
-   [CRDExporter]()
+   [CRDExporter](https://github.com/kyledebry/CRDFormatter/blob/master/CRDFormatter.jar?raw=true)
