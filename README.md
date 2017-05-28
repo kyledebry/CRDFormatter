@@ -25,12 +25,12 @@ Cols: 0        1  2  3  4  5  6  7  8  9        A          B      C D  E F
       C469D656 00 38 00 00 00 00 00 00 C45DD4A4 123002.019 170915 A 11 0 +0069
       C469D6CC A1 00 24 00 25 00 23 00 C45DD4A4 123002.019 170915 A 11 0 +0069
    ```
-and is largely written in hexadeximal (base 16), making it difficult for humans to work with.
+and is largely written in hexadecimal (base 16), making it difficult for humans to work with.
 
 The most important columns here are:
 - Columns 1 through 8, which, when nonzero, represent that one of the detectors has had the beginning of a pulse (cols 1, 3, 5, 7) or the end of a pulse (cols 2, 4, 6, 8). In the snippet above, in the first row detectors 0, 1, and 3 have started a pulse, and in the second row detector 2 has started a pulse, and then over the next three rows each of them deactivate. The last row is the start of a new detection event.
 - Column A, which is the time of day the event occurred, taken from GPS. In this example, all of the events occurred near 12:30pm (and 2.019 seconds).
-- Column B, which goves the date (DDMMYY). In this case, it is 17 Sept 2015.
+- Column B, which gives the date (DDMMYY). In this case, it is 17 Sept 2015.
 - Columns C, D, and E give error information (in this case everything is fine).
 
 However, this is difficult to read, and almost impossible to analyze in its current form. That's where CRDFormatter comes in.
@@ -56,7 +56,7 @@ The first three rows contain some information about CRDFormatter and when this f
 On row 5, the data begin. The formatted version of the file contains:
 - the date that the even was measured (for data collection runs that may last for days or weeks)
 - the time the event occurred past midnight in seconds
-- the time the event occurred, in milliseconds, after midnight UTC on January 1, 1970 (also known as [Unix time or epoch time](https://en.wikipedia.org/wiki/Unix_time)
+- the time the event occurred, in milliseconds, after midnight UTC on January 1, 1970 (also known as [Unix time or epoch time](https://en.wikipedia.org/wiki/Unix_time))
 - the number of the detector which went off first (the trigger number)
 - a flag for GPS signal (1 = valid, 0 = invalid)
 - a flag for the trigger rate (1 = valid, 0 = invalid, often due to saturation of the detector or board)
@@ -66,7 +66,7 @@ These data can then be analyzed in any program. `CSV ` files can be opened in an
 ### Simplified file:
 The `_SIMPLIFIED.csv` file does not contain each event separately, but rather generates two histograms from the data. The first has a row for each second of the run, and the number of events that occurred during that second, while the second has a row with how many events were recorded in each minute of the run.
 
-These two data sets can easily be plotted to very quickly gain a sense of the nature of the run, and are also often used in further analyses. The generation of these two lists is a result of the difficulty of creating historgrams in programs such as Excel, which has no native histogram functionality.
+These two data sets can easily be plotted to very quickly gain a sense of the nature of the run, and are also often used in further analyses. The generation of these two lists is a result of the difficulty of creating histograms in programs such as Excel, which has no native histogram functionality.
 
 Below is the `_SIMPLIFIED.csv` file from the sample dataset:
 
