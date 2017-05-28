@@ -6,11 +6,12 @@ CRDFormatter is a script for formatting EQUIP files into human-readable formats 
 ## Contents
 - [Download CRDFormatter](#download)
 - [Instructions](#instructions)
-    - [Description of EQUIP Files](#i_desc)
-    - [Using the Program](#i_using)
+    - [Demo files](#i_demo)
+    - [Description of EQUIP files](#i_desc)
+    - [Using the program](#i_using)
     - [Full Events file](#i_full)
     - [Simplified file](#i_simplified)
-    - [Common Errors](#i_errors)
+    - [Common errors](#i_errors)
         - [FileNotFoundException](#i_e_file)
         - [Other errors](#i_e_other)
 - [Contact Me](#contact)
@@ -24,10 +25,19 @@ CRDFormatter is a script for formatting EQUIP files into human-readable formats 
 ---
 
 ## <a name="instructions"></a>Instructions
+### <a name="i_demo"></a>Demo files
+In the instructions below, a specific EQUIP file is used as a demonstration. If you would like, you can download the file here to follow along:
+- [`EQUIP_17SEP2015_082846.txt`](https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/EQUIP_17SEP2015_082846.txt)
+
+
+Here are the files which result from running CRDFormatter on the demo file:
+- [`EQUIP_17SEP2015_082846_FULL_EVENTS.csv`](https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/EQUIP_17SEP2015_082846_FULL_EVENTS.csv)
+- [`EQUIP_17SEP2015_082846_SIMPLIFIED.csv`](https://raw.githubusercontent.com/kyledebry/CRDFormatter/master/EQUIP_17SEP2015_082846_SIMPLIFIED.csv)
+
 ### <a name="i_desc"></a>Description of EQUIP files
 CRDFormatter is a little program written by me to allow data from QuarkNet cosmic ray detectors, output by EQUIP, to be used by humans and analyzed however you want, with whatever tools you want.
 
-The data output from EQUIP looks like this:
+The [data output](#i_demo) from EQUIP looks like this:
    ```
 Cols: 0        1  2  3  4  5  6  7  8  9        A          B      C D  E F
       C469D655 B4 00 37 00 00 00 37 00 C45DD4A4 123002.019 170915 A 11 0 +0069
@@ -59,7 +69,7 @@ The program is very simple to use, and there is no user input required other tha
 That's it! Now, navigate through your file system to the location of the EQUIP file on your computer. In the same folder, you should now find two `.csv` files with the same name as the EQUIP file, but the file name of one will end with `_FULL_EVENTS.csv` and the other with `_SIMPLIFIED.csv`.
 
 ### <a name="i_full"></a>Full Events file:
-The `_FULL_EVENTS.csv` file has the least amount of processing done on the data. It simply reports the most important information in human-readable format. Here is an example, from the same sample file as the snippet above:
+The `_FULL_EVENTS.csv` file has the least amount of processing done on the data. It simply reports the most important information in human-readable format. Here is an example, from the same [sample file](#i_demo) as the snippet above:
 
 ![Full Events file][full-events]
 
@@ -80,7 +90,7 @@ The `_SIMPLIFIED.csv` file does not contain each event separately, but rather ge
 
 These two data sets can easily be plotted to very quickly gain a sense of the nature of the run, and are also often used in further analyses. The generation of these two lists is a result of the difficulty of creating histograms in programs such as Excel, which has no native histogram functionality.
 
-Below is the `_SIMPLIFIED.csv` file from the sample dataset:
+Below is the `_SIMPLIFIED.csv` file from the [sample dataset](#i_demo):
 
 ![Simplified file][simplified]
 
@@ -100,7 +110,7 @@ Also shown in the image above are two graphs which show how easy it is to gain a
 
 Depending on the length of the run and the rate at which events occurred, either the second or the minute graphs may be more useful. If another binning is required, the full event dataset can be used in programs like Excel to generate different histograms or analyses with a bit of extra work.
 
-### <a name="i_errors"></a>Common Errors:
+### <a name="i_errors"></a>Common errors:
 #### <a name="i_e_file"></a>FileNotFoundException
 
 ![Error: FileNotFoundException][error-file]
@@ -123,9 +133,6 @@ Email: [debry.1@osu.edu](mailto:debry.1@osu.edu)
 ---
 
 ## <a name="copyright"></a>Copyright Stuff
-
----
-
 You are free to distribute the CRDFormatter.jar program to anyone and use it for any reason. Giving credit would be nice. Specifically:
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">CRDFormatter</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/kyledebry" property="cc:attributionName" rel="cc:attributionURL">Kyle DeBry</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
