@@ -132,7 +132,7 @@ You are free to distribute the CRDFormatter.jar program to anyone and use it for
 
 I'd prefer for you not to try to decompile the bytecode and muck around with it, not because I'll hunt you down, but because it's kind of a mess. If you have questions about the program or want to make modifications, please [email me](mailto:debry.1@osu.edu).
 
-
+---
 
 <center>This page &copy; 2017 Kyle DeBry.</center>
 
