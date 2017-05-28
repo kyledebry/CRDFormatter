@@ -1,5 +1,5 @@
 # CRDFormatter
-CRDFormatter is a script for formatting EQUIP files into human-readable formats created by Kyle DeBry.
+CRDFormatter is a script for formatting EQUIP files into human-readable formats created by [Kyle DeBry](https://github.com/kyledebry).
 
 ---
 
