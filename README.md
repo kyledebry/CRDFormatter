@@ -2,7 +2,7 @@
 CRDFormatter is a script for formatting EQUIP files into human-readable formats created by Kyle DeBry.
 
 ## Contact me
-[debry.1@osu.edu](mailto:debry.1@osu.edu)
+Email: [debry.1@osu.edu](mailto:debry.1@osu.edu)
 
 ---
 
@@ -96,7 +96,7 @@ Depending on the length of the run and the rate at which events occurred, either
 This error results from the CRDFormatter program trying to write to a file that is currently opened. For example, if you have previously formatted a file called `EQUIP_X.txt` and then opened the resulting `EQUIP_X_Simplified.csv` file in Excel, trying to format another file of the same name (`EQUIP_X.txt`) will result in this error. To successfully format the file, first close the `EQUIP_X_Simplified.csv` window of the program it is opened in (or possibly `Save As` another filename first) and run CRDFormatter again.
 
 #### Other errors
-If you experience any other errors (either an error upon running the program, or an incorrectly formatted file), [email me][mailto:debry.1@osu.edu] with:
+If you experience any other errors (either an error upon running the program, or an incorrectly formatted file), [email me](mailto:debry.1@osu.edu) with:
 - the file you were trying to format
 - a screenshot of the error message or the resulting incorrect file
 - a specific description of the error
@@ -108,7 +108,7 @@ You are free to distribute the CRDFormatter.jar program to anyone and use it for
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">CRDFormatter</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://kyledebry.github.io/CRDFormatter/" property="cc:attributionName" rel="cc:attributionURL">Kyle DeBry</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-I'd prefer for you not to try to decompile the bytecode and muck around with it, not because I'll hunt you down, but because it's kind of a mess. If you have questions about the program or want to make modifications, please [email me][mailto:debry.1@osu.edu].
+I'd prefer for you not to try to decompile the bytecode and muck around with it, not because I'll hunt you down, but because it's kind of a mess. If you have questions about the program or want to make modifications, please [email me](mailto:debry.1@osu.edu).
 
 <center>This page &copy; 2017 Kyle DeBry.</center>
 
