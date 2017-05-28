@@ -76,7 +76,7 @@ The `_FULL_EVENTS.csv` file has the least amount of processing done on the data.
 The first three rows contain some information about CRDFormatter and when this file was generated.
 
 On row 5, the data begin. The formatted version of the file contains:
-- the date that the even was measured (for data collection runs that may last for days or weeks)
+- the date that the event was measured (for data collection runs that may last for days or weeks)
 - the time the event occurred past midnight in seconds
 - the time the event occurred, in milliseconds, after midnight UTC on January 1, 1970 (also known as [Unix time or epoch time](https://en.wikipedia.org/wiki/Unix_time))
 - the number of the detector which went off first (the trigger number)
